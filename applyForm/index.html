@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Emir Sadovic">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+        <title>Apply For a Job</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <h1 class="text-white mb-20">Apply For a Job</h1>
+            <form class="cv-form" action="/submit">
+                <label class="text-gold" for="file">Upload your CV:</label>
+                <br>
+                <br>
+                <input class="mt-6 mb-14" type="file" name="file" id="file">
+                <br>
+                <h2 class="text-white mb-20">Profile</h2>
+                <label class="text-gold" for="fname">First name:</label>
+                <br>
+                <input class="mt-6 mb-14 w-100" type="text" placeholder="Enter First Name" value="" name="fname" id="fname">
+                <br>
+                <label class="text-gold" for="lastname">Last Name:</label>
+                <br>
+                <input class="mt-6 mb-14 w-100" type="text" placeholder="Enter Last Name" value="" name="lastname" id="lastname">
+                <br>
+                <label class="text-gold" for="email">Email:</label>
+                <br>
+                <input class="mt-6 mb-14 w-100" type="email" placeholder="Enter Email" name="mail" id="mail">
+                <br>
+                <label class="text-gold" for="phone">Phone:</label>
+                <br>
+                <input class="mt-6 mb-14 w-100" type="number" placeholder="Enter Phone Number" name="phone" id="phone">
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary ">Apply</button>
+            </form>
+        </div>
+    </body>
+</html>
