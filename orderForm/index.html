@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emir Sadovic">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Order form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="text-white mb-20" id="form">Order Form</h1>
+
+   <!-- <form onsubmit="onFormSubmit(event)"> -->
+    <form class="cv-form" action="/submit"></form>
+        <label for="name">Your Name:</label>
+        <input class="mt-6 mb-14" type="text" id="name" placeholder="Your Name" name="name" value="">
+        <br> 
+        <br>
+        <label for="email">Your Email:</label>
+        <input class="text-gold" type="email" placeholder="Enter Email" name="mail" id="mail">
+        <br>
+
+        <p class="mt-6 mb-14">Choose your product</p>
+        <input type="radio" name="product" value="product1"><label>Product1</label>
+        <input type="radio" name="product" value="product2"><label>Product2</label>
+        <input type="radio" name="product" value="product3"><label>Product3</label>
+        <br>
+        <br>
+        <label for="name">Delivery date</label>
+        <input class="mt-6 mb-14" type="date" id="date" name="date" value="08/22/2021">
+        <br> 
+        <br>
+        <label class="" for="quantity">Quantity:</label>
+        <input class="mt-6 mb-14 w-100" type="number"  name="quantity" id="quantity">
+        <br> 
+        <br>
+
+        <label for="adress">Adress:</label>
+        <input class="mt-6 mb-14" type="text" id="name" placeholder="Street adress" name="adress" value="">
+        <br>
+        <br>
+        <label>City:</label>
+        <select name="city">
+            <option value="city1">City 1</option>
+            <option value="city2">City 2</option>
+            <option value="city3" selected>City 3</option>
+        </select>
+        <br>
+        <br>
+        <label>Region:</label>
+        <select name="region">
+            <option value="region1">Region 1</option>
+            <option value="region2">Region 2</option>
+            <option value="region3" selected>Region 3</option>
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" id="checkbox" name="checkbox" value="">
+        <label class="mt=6 mb-14" for="checkbox">Notify me by email</label>
+        <br>
+        <br>
+        <textarea placeholder="Your comment here" name="message" rows="10" cols="30"></textarea>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary ">Order</button>
+
+</body>
+</html>
